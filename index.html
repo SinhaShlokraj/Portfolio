@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shlokraj Sinha | Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pQf1mK1Z9uDgf2xw0j1JvJgZfQh3n8q9tE5QG8gWzQ1X6l9kZ0w2n5eJ3fQ8X9nK/2fJ6HqJY1X0Yx1P3kV6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- FIXED HEADER -->
+    <header class="header">
+        <div class="logo">Shlokraj Sinha</div>
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- MAIN LAYOUT -->
+    <main class="main-container">
+    <div class="main-inner container-wide">
+
+        <!-- STICKY SIDEBAR -->
+        <aside class="sidebar" role="complementary" aria-labelledby="sidebar-title">
+            <div class="sidebar-accent" aria-hidden="true"></div>
+            <div class="profile-photo-wrap" aria-hidden="false" role="button" tabindex="0" aria-label="Upload profile photo">
+                <img src="https://picsum.photos/150/150?" alt="Profile photo of Shlokraj Sinha" class="profile-photo" />
+                <input type="file" id="profile-upload" accept="image/*" style="display: none;">
+                <div class="upload-overlay">
+                    <i class="fas fa-camera"></i>
+                </div>
+            </div>
+            <h2 id="sidebar-title" class="profile-name">Shlokraj Sinha</h2>
+            <p class="profile-role">Full Stack Developer</p>
+            <hr />
+            <p class="bio">Computer Science student passionate about building beautiful web experiences and learning new technologies. Focused on modern web stacks and accessible UI.</p>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/shlokraj-sinha-125960289/" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://x.com/ShlokrajSinha" class="social-btn"><i class="fab fa-x-twitter"></i> Twitter</a>
+                <a href="https://github.com/SinhaShlokraj" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+            <a class="resume-btn" href="/assets/resume.pdf" download aria-label="Download Resume">
+                <i class="fas fa-file-download"></i> Download Resume
+            </a>
+        </aside>
+
+        <!-- CONTENT -->
+        <section class="content">
+
+            <!-- HERO -->
+            <section class="hero" id="home">
+                <div class="hero-inner">
+                    <h1 class="hero-title">Welcome to My Portfolio</h1>
+                    <p class="hero-sub">I'm a Full Stack Developer specializing in modern web technologies</p>
+                    <a class="btn-cta" href="#projects">View My Work</a>
+                </div>
+            </section>
+
+            <!-- ABOUT -->
+            <section class="section" id="about">
+                <h1>About Me</h1>
+                <p>
+                    Hello! I am currently pursuing my Bachelor of Science in Computer Science & Engineering. I build accessible, responsive web apps with a focus on performance and UX.
+                </p>
+                <p>
+                    I enjoy working across the stack—creating polished front-end experiences and reliable back-end systems. When I'm not coding, I explore design systems and try out new JavaScript libraries.
+                </p>
+            </section>
+
+            <!-- EDUCATION (timeline-based) -->
+            <section class="section" id="education">
+                <h2>Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Bachelor of Science in Computer Science & Engineering</h3>
+                        <p class="timeline-institution">Karnavati University</p>
+                        <p class="timeline-duration">2023 - 2027</p>
+                        <p>Ongoing coursework in data structures, algorithms, web development, and software engineering.</p>
+                    </div>
+                    <div class="timeline-item">
+                    <h3>Higher Secondary Certificate</h3>
+                        <p class="timeline-institution">Seventh-Day Adventist Higher Secondary School</p>
+                        <p class="timeline-duration">2022 - 2023</p>
+                        <p>Completed my 12th from ISC board.</p>
+                     </div>
+                      <div class="timeline-item">
+                    <h3>Secondary School Certificate</h3>
+                        <p class="timeline-institution">Seventh-Day Adventist Higher Secondary School</p>
+                        <p class="timeline-duration">2020 - 2021</p>
+                        <p>Completed my 10th from ICSE board.</p>
+                     </div>
+                </div>
+            </section>
+
+            <!-- SKILLS (icon-based) -->
+            <section class="section" id="skills">
+                <h2>Skills</h2>
+                <div class="skill-list">
+                    <div class="skill-card"><span class="skill-icon">💻</span><span class="skill-name">HTML / CSS</span></div>
+                    <div class="skill-card"><span class="skill-icon">⚡</span><span class="skill-name">JavaScript</span></div>
+                    <div class="skill-card"><span class="skill-icon">⚛️</span><span class="skill-name">React</span></div>
+                    <div class="skill-card"><span class="skill-icon">🎨</span><span class="skill-name">UI/UX</span></div>
+                    <div class="skill-card"><span class="skill-icon">🔗</span><span class="skill-name">Node.js</span></div>
+                    <div class="skill-card"><span class="skill-icon">🗄️</span><span class="skill-name">MongoDB</span></div>
+                </div>
+            </section>
+
+            <!-- PROJECTS -->
+            <section class="section" id="projects">
+                <h2>Projects</h2>
+
+                 <article class="project-card">
+                        <div class="project-image-wrap"><img src="Portfolio.png" alt="Portfolio Website"></div>
+                        <div class="badge featured">New</div>
+                        <h3>Portfolio Website</h3>
+                        <p>Personal portfolio showcasing projects and blog entries with modern UI.</p>
+                        <div class="tech-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image-wrap"><img src="To-Do app.png" alt="Task Manager"></div>
+                        <div class="badge new">Featured</div>
+                        <h3>Web Task Manager</h3>
+                        <p>A cross-platform web-based app to manage tasks and sync across devices.</p>
+                        <div class="tech-tags"><span>React Native</span><span>Firebase</span></div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image-wrap"><img src="" alt="Online attendence system"></div>
+                        <div class="badge popular">Upcoming</div>
+                        <h3>Online attendence system using RF ID</h3>
+                        <p>Online Attendence system using RF ID tags</p>
+                        <div class="tech-tags"><span>MongoDB</span><span>JavaScript</span><span>SQL</span></div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- CERTIFICATES -->
+            <section class="section" id="certificates">
+                <h2>Certificates</h2>
+                <div class="certificate-grid">
+                    <div class="certificate-card">
+                        <h3>Learning full-stack JavaScript development</h3>
+                        <p class="cert-issuer">LinkedIn Learning</p>
+                        <p class="cert-date">January 2026</p>
+                    </div>
+                    <div class="certificate-card">
+                        <h3>Introduction to Network Routing</h3>
+                        <p class="cert-issuer">LinkedIn Learning</p>
+                        <p class="cert-date">November 2025</p>
+                    </div>
+                    <div class="certificate-card">
+                        <h3>Blockchain Development</h3>
+                        <p class="cert-issuer">IEEE Samsung</p>
+                        <p class="cert-date">July 2025</p>
+                    </div>
+                    <div class="certificate-card">
+                        <h3>DroneBootcamp</h3>
+                        <p class="cert-issuer">freeCodeCamp</p>
+                        <p class="cert-date">December 2024</p>
+                    </div>
+                    <div class="certificate-card">
+                        <h3>Cybersecurity</h3>
+                        <p class="cert-issuer">Bindcat</p>
+                        <p class="cert-date">August 2023</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section class="section" id="contact">
+                <h2>Get In Touch</h2>
+                <p class="contact-intro">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>shlokrajsinhaa@gmail.com</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h3>Phone</h3>
+                        <p>+91 91577 10227</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Location</h3>
+                        <p>Patna, India</p>
+                    </div>
+                </div>
+
+                <br />
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input" rows="4" placeholder="Message"></textarea>
+                    </div>
+                    <button type="button" class="btn-primary">Send Message</button>
+                </form>
+            </section>
+
+        </section>
+    </div>
+
+    <!-- STATIC FOOTER -->
+    <footer class="footer">
+        &copy; 2026 Shlokraj Sinha. All rights reserved.
+    </footer>
+
+    <script src="assets/js/portfolio.js" defer></script>
+</body>
+</html>
